@@ -3,7 +3,7 @@
 local M = {}
 
 M.ui = {
-   theme = "onedark",
+   theme = "everforest",
 
    -- theme toggle
    theme_toggler = false,
@@ -27,7 +27,7 @@ M.ui = {
 
 M.options = {
    permanent_undo = true,
-   ruler = false,
+   ruler = true,
    hidden = true,
    ignorecase = true,
    mouse = "a",
@@ -40,7 +40,7 @@ M.options = {
    relativenumber = false,
    numberwidth = 2,
    expandtab = true,
-   shiftwidth = 2,
+   shiftwidth = 4,
    smartindent = true,
    mapleader = " ",
    autosave = false,
@@ -98,7 +98,7 @@ M.mappings = {
       newfile = "<leader>fn",
       bookmarks = "<leader>bm",
       sessionload = "<leader>l",
-      sessionsave = "<leader>s",
+      sessionsave = "<leader>ss",
    },
    telescope = {
       live_grep = "<leader>fw",
@@ -140,12 +140,12 @@ M.mappings = {
    },
    -- navigation in insert mode
    insert_nav = {
-      forward = "<C-l>",
-      backward = "<C-h>",
+      forward = "<C-f>",
+      backward = "<C-b>",
       top_of_line = "<C-a>",
       end_of_line = "<C-e>",
-      prev_line = "<C-j>",
-      next_line = "<C-k>",
+      prev_line = "<C-p>",
+      next_line = "<C-n>",
    },
    misc = {
       copywhole_file = "<C-a>",

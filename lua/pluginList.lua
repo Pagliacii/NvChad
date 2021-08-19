@@ -242,13 +242,6 @@ return packer.startup(function()
    use {
       "glepnir/dashboard-nvim",
       disable = not plugin_status.dashboard_nvim,
-      cmd = {
-         "Dashboard",
-         "DashboardNewFile",
-         "DashboardJumpMarks",
-         "SessionLoad",
-         "SessionSave",
-      },
       setup = function()
          require "plugins.dashboard"
          require("mappings").dashboard()
@@ -313,5 +306,21 @@ return packer.startup(function()
       setup = function()
          require("mappings").fugitive()
       end,
+   }
+
+   use {
+     "tpope/vim-surround"
+   }
+
+   use {
+     "tpope/vim-repeat"
+   }
+
+   use {
+     "luochen1990/rainbow"
+   }
+
+   use {
+     "mbbill/undotree"
    }
 end)

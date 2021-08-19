@@ -96,6 +96,21 @@ M.misc = function()
    -- add NvChadUpdate command and mapping
    cmd "silent! command! NvChadUpdate lua require('utils').update_nvchad()"
    map("n", user_map.misc.update_nvchad, ":NvChadUpdate<CR>", opt)
+
+   -- custom mappings
+   map("n", "s", "<nop>", opt)
+   map("n", "<LEADER>sh", ":set nosplitright<CR>:vsplit<CR>:set splitright<CR>", opt)
+   map("n", "<LEADER>sl", ":vsplit<CR>", opt)
+   map("n", "<LEADER>sj", ":split<CR>", opt)
+   map("n", "<LEADER>sk", ":set nosplitbelow<CR>:split<CR>:set splitbelow<CR>", opt)
+   map("n", "<C-J>", "<C-W>j", opt)
+   map("n", "<C-K>", "<C-W>k", opt)
+   map("n", "<C-H>", "<C-W>h", opt)
+   map("n", "<C-L>", "<C-W>l", opt)
+   map("n", "<LEADER>qj", "<C-W>j:q<CR>", opt)
+   map("n", "<LEADER>qk", "<C-W>k:q<CR>", opt)
+   map("n", "<LEADER>qh", "<C-W>h:q<CR>", opt)
+   map("n", "<LEADER>ql", "<C-W>l:q<CR>", opt)
 end
 
 M.bufferline = function()

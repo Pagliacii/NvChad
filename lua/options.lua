@@ -21,6 +21,7 @@ opt.cmdheight = options.cmdheight
 opt.updatetime = options.updatetime -- update interval for gitsigns
 opt.timeoutlen = options.timeoutlen
 opt.clipboard = options.clipboard
+opt.tabstop = 4
 
 -- disable nvim intro
 opt.shortmess:append "sI"
