@@ -111,6 +111,8 @@ M.misc = function()
    map("n", "<LEADER>qk", "<C-W>k:q<CR>", opt)
    map("n", "<LEADER>qh", "<C-W>h:q<CR>", opt)
    map("n", "<LEADER>ql", "<C-W>l:q<CR>", opt)
+   map("n", ";", ":", opt)
+   map("n", "<LEADER>\\", "1<C-g>", opt)
 end
 
 M.bufferline = function()
