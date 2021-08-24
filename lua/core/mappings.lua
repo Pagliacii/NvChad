@@ -113,6 +113,7 @@ M.misc = function()
    local function custom_mappings()
        -- custom mappings
        map("n", "s", "<nop>", opt)
+       map("n", "<C-H>", "<nop>", opt)
        map("n", "<LEADER>sh", ":set nosplitright<CR>:vsplit<CR>:set splitright<CR>", opt)
        map("n", "<LEADER>sl", ":vsplit<CR>", opt)
        map("n", "<LEADER>sj", ":split<CR>", opt)

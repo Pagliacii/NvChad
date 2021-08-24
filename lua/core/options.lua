@@ -7,7 +7,6 @@ g.nvchad_user_config = "chadrc"
 local options = require("core.utils").load_config().options
 
 opt.clipboard = options.clipboard
-opt.tabstop = 4
 opt.cmdheight = options.cmdheight
 opt.completeopt = { "menuone", "noselect" }
 opt.cul = true -- cursor line

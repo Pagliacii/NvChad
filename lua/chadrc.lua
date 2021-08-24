@@ -53,7 +53,7 @@ M.options = {
    numberwidth = 2,
    shiftwidth = 4,
    smartindent = true,
-   tabstop = 8, -- Number of spaces that a <Tab> in the file counts for
+   tabstop = 4, -- Number of spaces that a <Tab> in the file counts for
    timeoutlen = 400,
    relativenumber = false,
    ruler = false,
@@ -101,11 +101,11 @@ M.mappings = {
 
    -- navigation in insert mode, only if enabled in options
    insert_nav = {
-      backward = "<C-h>",
+      backward = "<C-b>",
       end_of_line = "<C-e>",
-      forward = "<C-l>",
-      next_line = "<C-k>",
-      prev_line = "<C-j>",
+      forward = "<C-f>",
+      next_line = "<C-n>",
+      prev_line = "<C-p>",
       top_of_line = "<C-a>",
    },
 
@@ -162,6 +162,7 @@ M.mappings.plugin = {
    },
    nvimtree = {
       toggle = "<C-n>", -- file manager
+      foucs = "<nop>",  -- ignore the default keybinding
    },
    neoformat = {
       format = "<leader>fm",
