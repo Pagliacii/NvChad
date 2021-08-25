@@ -341,4 +341,8 @@ return packer.startup(function()
    use {
      "mbbill/undotree"
    }
+
+   use {
+       "wakatime/vim-wakatime"
+   }
 end)
