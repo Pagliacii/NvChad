@@ -168,7 +168,7 @@ M.mappings.plugin = {
    },
    nvimtree = {
       toggle = "<C-n>", -- file manager
-      foucs = "<nop>",  -- ignore the default keybinding
+      foucs = "<nop>", -- ignore the default keybinding
    },
    neoformat = {
       format = "<leader>fm",
