@@ -59,7 +59,6 @@ M.options = {
    tabstop = 4, -- Number of spaces that a <Tab> in the file counts for
    timeoutlen = 400,
    relativenumber = false,
-   ruler = false,
    updatetime = 250,
    -- used for updater
    update_url = "https://github.com/NvChad/NvChad",
@@ -90,7 +89,7 @@ M.plugin_status = {
    neoscroll = true, -- smooth scroll
    telescope_media = false, -- see media files in telescope picker
    truezen = false, -- no distraction mode for nvim
-   vim_fugitive = false, -- git in nvim
+   vim_fugitive = true, -- git in nvim
    vim_matchup = true, -- % magic, match it but improved
 }
 
@@ -214,6 +213,21 @@ M.custom.mappings = {
    --    "<leader>cc",
    --    "gg0vG$d",
    -- },
+   ignore_default_s_key = { "n", "s", "<nop>" },
+   split_right = { "n", "<LEADER>sh", ":set nosplitright<CR>:vsplit<CR>:set splitright<CR>" },
+   split_left = { "n", "<LEADER>sl", ":vsplit<CR>" },
+   split_above = { "n", "<LEADER>sj", ":split<CR>" },
+   split_below = { "n", "<LEADER>sk", ":set nosplitbelow<CR>:split<CR>:set splitbelow<CR>" },
+   cursor_jump_up = { "n", "<C-J>", "<C-W>j" },
+   cursor_jump_down = { "n", "<C-K>", "<C-W>k" },
+   cursor_jump_left = { "n", "<C-H>", "<C-W>h" },
+   cursor_jump_right = { "n", "<C-L>", "<C-W>l" },
+   close_window_above = { "n", "<LEADER>qj", "<C-W>j:q<CR>" },
+   close_window_below = { "n", "<LEADER>qk", "<C-W>k:q<CR>" },
+   close_window_left = { "n", "<LEADER>qh", "<C-W>h:q<CR>" },
+   close_window_right = { "n", "<LEADER>ql", "<C-W>l:q<CR>" },
+   eazy_colon = { "n", ";", ":" },
+   show_path_quickly = { "n", "<LEADER>\\", "1<C-g>" },
 }
 
 M.plugins = {
