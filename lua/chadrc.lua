@@ -233,7 +233,7 @@ M.custom.mappings = {
 M.plugins = {
    lspconfig = {
       -- servers = {"html", "cssls"}
-      servers = {"clangd", "efm", "gopls", "pyright", "rust_analyzer"},
+      servers = { "clangd", "efm", "gopls", "pyright", "rust_analyzer" },
    },
 }
 
