@@ -339,22 +339,22 @@ return packer.startup(function()
    }
 
    use {
-     "tpope/vim-surround"
+      "tpope/vim-surround",
    }
 
    use {
-     "tpope/vim-repeat"
+      "tpope/vim-repeat",
    }
 
    use {
-     "luochen1990/rainbow"
+      "luochen1990/rainbow",
    }
 
    use {
-     "mbbill/undotree"
+      "mbbill/undotree",
    }
 
    use {
-       "wakatime/vim-wakatime"
+      "wakatime/vim-wakatime",
    }
 end)
