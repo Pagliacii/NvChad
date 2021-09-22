@@ -359,10 +359,10 @@ return packer.startup(function()
    }
 
    use {
-       "liuchengxu/vim-which-key"
+      "liuchengxu/vim-which-key",
    }
 
    use {
-       "rizzatti/dash.vim"
+      "rizzatti/dash.vim",
    }
 end)
