@@ -357,4 +357,12 @@ return packer.startup(function()
    use {
       "wakatime/vim-wakatime",
    }
+
+   use {
+       "liuchengxu/vim-which-key"
+   }
+
+   use {
+       "rizzatti/dash.vim"
+   }
 end)
